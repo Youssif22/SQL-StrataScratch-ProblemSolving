@@ -1,0 +1,4 @@
+SELECT DISTINCT signup_id, DATE(transaction_start_date)
+from transactions
+WHERE MONTH(transaction_start_date) = 4 OR MONTH(transaction_start_date) = 5
+GROUP BY signup_id;
