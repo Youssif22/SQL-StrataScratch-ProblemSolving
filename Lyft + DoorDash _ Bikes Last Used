@@ -1,0 +1,3 @@
+select DISTINCT bike_number, MAX(end_time)
+from dc_bikeshare_q1_2012
+GROUP BY bike_number;
